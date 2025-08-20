@@ -59,16 +59,27 @@ const LatestNewsPage = () => {
       galleryUrl: "/galerie-facilitare-tranzitie"
     },
     {
-      id: 9,
-      title: "Tranziția Verde a Republicii Moldova: Motor al Integrării Europene și Dezvoltării Durabile",
-      excerpt: "Pe 24 iunie, la Maib Park, a avut loc conferința națională \"Tranziția verde a Republicii Moldova: Un motor al integrării europene și al creșterii durabile\". Evenimentul a fost organizat de Uniunea Europeană și Programul Națiunilor Unite pentru Dezvoltare (PNUD).",
-      date: "24 iunie 2025",
-      author: "ANIPM",
-      category: "sustenabilitate",
-      readTime: "10 min",
-      url: "#",
-      hasImages: true,
-      image: trans1Image // Keep the existing conference image for this one
+      id: 35,
+      title: "Anunț privind organizarea consultărilor publice pe marginea proiectului hotărârii Guvernului cu privire la aprobarea Cerințelor de calitate pentru produsele de panificație și pastele făinoase și a notei de fundamentare.",
+      excerpt: "Afla mai multe pe site-ul original",
+      date: "14 iunie 2025-30 iunie 2025",
+      author: "Particip.gov.md",
+      category: "panificatie si paste",
+      image: "https://particip.gov.md/resources/images/cover.jpg",
+      readTime: "3 min",
+      url: "https://particip.gov.md/ro/document/stages/anunt-privind-organizarea-consultarilor-publice-pe-marginea-proiectului-hotararii-guvernului-cu-privire-la-aprobarea-cerintelor-de-calitate-pentru-produsele-de-panificatie-si-pastele-fainoase-si-a-notei-de-fundamentare/14839",
+      isExternal: true
+    },
+    {
+      id: 33,
+      title: "Moldova este cel mai mare cumpărător de făină ucraineană",
+      excerpt: "Citește analiza completă pe site-ul original.",
+      date: "19 iulie 2025",
+      author: "Point.md",
+      category: "business",
+      image: "https://images.pexels.com/photos/3756050/pexels-photo-3756050.jpeg?_gl=1*6lsf9a*_ga*MjAzNDIxNTg4My4xNzQ3NDcwNDM3*_ga_8JE65Q40S6*czE3NTU2MTU3MzQkbzE1JGcxJHQxNzU1NjE1NzUyJGo0MiRsMCRoMA..",
+      readTime: "3 min",
+      url: "https://point.md/ru/novosti/ekonomika/moldova-iavliaetsia-krupneishim-pokupatelem-ukrainskoi-muki/"
     },
     {
       id: 7,

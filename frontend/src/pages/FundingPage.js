@@ -62,7 +62,16 @@ const FundingPage = () => {
       logo: odaImg,
       categories: ["IMM", "Femei în afaceri", "Diaspora"],
       delay: 0.5
-    }
+    },
+    {
+      id: 4,
+      title: "Bridge",
+      description: "Lansarea Programului Bridge – Sprijin financiar pentru internaționalizarea companiilor Lansat de Agenția de Investiții din Moldova, Programul Bridge oferă sprijin financiar nerambursabil companiilor care participă la evenimente internaționale (expoziții, târguri, forumuri, misiuni B2B etc.) în vederea extinderii pe piețele externe.\n✅ Ce oferă programul: Rambursarea a două din trei tipuri de cheltuieli: • taxe de participare, • transport internațional (economic), • cazare (tip BB/RO). Suport financiar anual: • 1500 EUR – primul an, • 1000 EUR – al doilea an, • 500 EUR – al treilea an. Până la 3 persoane per companie pot beneficia, în limita sumei aprobate.\n🏢 Cine poate aplica: IMM-uri și asociații din domenii precum: IT, industrie ușoară, film, apicultură, cosmetice, turism, vitivinicol, agro-alimentar, educație, economie verde, etc.\n📌 Condiții de participare: Aplicare cu minimum 14 zile înainte de eveniment; Rambursare doar post-eveniment, în baza raportului financiar și narativ; Cofinanțare proprie obligatorie.\n📥 Aplică pe site-ul nostru. Programul este administrat cu suportul unui facilitator desemnat și este parte a eforturilor de creștere a competitivității exportatorilor moldoveni.",
+      website: "https://bridge.invest.gov.md/",
+      logo: "https://bridge.invest.gov.md/wp-content/uploads/2025/03/BLogoBlack.png",
+      categories: ["Noi oportunitati"],
+      delay: 0.3
+    },
   ];
 
   // Animation variants

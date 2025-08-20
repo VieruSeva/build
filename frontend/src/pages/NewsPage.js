@@ -26,7 +26,9 @@ import trans4 from "../images/trans4.jpg";
 import trans5 from "../images/trans5.jpg";
 import trans6 from "../images/trans6.jpg";
 import trans7 from "../images/trans7.jpg";
-
+import riga from "../images/riga.jpg";
+import anuga from "../images/anuga.jpg";
+import uzb from "../images/uzb.jpg";
 const NewsPage = () => {
   const [activeCategory, setActiveCategory] = useState("toate");
   const [expandedItemId, setExpandedItemId] = useState(null);
@@ -119,6 +121,35 @@ const NewsPage = () => {
       additionalImages: [expo2],
       url: "http://www.farmer.moldexpo.md/",
       fullContent: "Expoziţia-târg internaţională specializată de produse, utilaje, tehnologii agricole şi meşteşuguri, ediţia a XXVII-a, reprezintă cel mai important eveniment anual dedicat industriei agricole și alimentare din Republica Moldova. Cu o tradiție de peste două decenii, evenimentul reunește peste 300 de expozanți din 15 țări și atrage aproximativ 20.000 de vizitatori profesioniști. Participanții vor avea oportunitatea de a descoperi cele mai noi echipamente, tehnologii și inovații în domeniul agriculturii, de a participa la demonstrații practice, seminarii și conferințe de specialitate. Secțiunile speciale includ: utilaje agricole, sisteme de irigații, soiuri de semințe, produse de protecție a plantelor, tehnologii de procesare a alimentelor, soluții de ambalare, precum și o zonă dedicată meșteșugurilor tradiționale. Înscrierile pentru expozanți sunt deschise până pe 1 septembrie 2025."
+    },
+    {
+      id: 8,
+      title: "Riga Food Expo",
+      description: "Cel mai mare târg al industriei alimentare din țările baltice - te așteaptă în perioada 4-6 septembrie 2025, la Riga, Letonia!",
+      startDate: "4 Septembrie 2025",
+      endDate: "6 Septembrie 2025",
+      location: "Riga, Letonia",
+      image: riga,
+      fullContent: "Riga Food Expo - cel mai mare târg al industriei alimentare din țările baltice - te așteaptă în perioada 4-6 septembrie 2025, la Riga, Letonia! ✅ Ce câștigi dacă participi: • Vizibilitate internațională pentru produsele tale                                 • Acces la noi piețe și contacte comerciale valoroase • Prezență la un eveniment de referință în domeniu"
+    },
+    {
+      id: 9,
+      title: "Anuga",
+      description: "Cel mai mare târg internațional dedicat industriei alimentare și băuturilor.",
+      startDate: "4 Octombrie 2025",
+      endDate: "8 Octombrie 2025",
+      location: "Koelnmesse, Köln (Germania)",
+      image: anuga,
+      fullContent: "Expozitia Anuga 2025, cel mai mare târg internațional de produse alimentare și băuturi, va avea loc între 4 și 8 octombrie la Koelnmesse, în Köln, Germania, sub tema Sustainable Growth, cu un accent deosebit pe inovațiile sustenabile și proteinele alternative, reunind peste 7.500 de expozanți și 170.000 de vizitatori profesioniști din întreaga lume."
+    },
+    {
+      id: 46,
+      title: "Participare la întrevederea organizată de MAIA privind pregătirea pentru screening bilateral cu Comisia Europeană",
+      description: "La data de 31 iulie 2025, la sediul Ministerului Agriculturii și Industriei Alimentare (MAIA), a avut loc o întrevedere de lucru organizată de minister, în prezența doamnei Ina Butucel, secretar de stat...",
+      startDate: "31 Iulie 2025",
+      location: "Chișinău, Republica Moldova",
+      image: ministerImage,
+      fullContent: "La data de 31 iulie 2025, la sediul Ministerului Agriculturii și Industriei Alimentare (MAIA), a avut loc o întrevedere de lucru organizată de minister, în prezența doamnei Ina Butucel, secretar de stat. La eveniment au participat reprezentanți ai sub sectoarelor industriei alimentare: zahăr, produse procesate din carne, lapte și produse lactate, produse pescărești, panificație și patiserie, conserve din fructe și legume, sucuri. În cadrul întâlnirii a fost prezentat conceptul de țară pentru domeniile menționate, în contextul screeningului bilateral ce va avea loc în luna septembrie 2025, ca parte a procesului de aderare a Republicii Moldova la Uniunea Europeană. Discuțiile s-au concentrat pe următoarele capitole din acquis-ul comunitar: • Capitolul 11: Agricultură și dezvoltare rurală • Capitolul 12: Siguranța alimentelor și politici sanitare și fitosanitare • Capitolul 13: Pescuit și acvacultură Un mesaj important transmis în cadrul întâlnirii a fost necesitatea consolidării eforturilor tuturor actorilor din sectorul agroalimentar. În special, s-a subliniat importanța unei poziții comune și bine argumentate în procesul de negociere a perioadelor de tranziție, pentru a obține condiții cât mai favorabile de integrare pentru industria alimentară din Republica Moldova. Totodată, s-a menționat că este crucial ca fiecare sector să vină cu propuneri și necesități reale, care trebuie incluse în Capitolul 11 – Agricultură și dezvoltare rurală. Implicarea activă a reprezentanților industriei este esențială pentru a asigura o alocare corectă a fondurilor, modernizarea capacităților de producție, asigurarea trasabilității, creșterea capacității de export și dezvoltarea durabilă a sectorului agroalimentar. ANIPM îndeamnă toți membrii și partenerii din sectorul agroalimentar care doresc să contribuie cu propuneri, observații sau necesități concrete legate de Capitolul 11, să transmită informațiile la adresa de e-mail: anipm@rodals.md Cu deosebit respect, ANIPM"
     },
     {
       id: 3,
@@ -241,6 +272,17 @@ const NewsPage = () => {
       isExternal: true
     },
     {
+      id: 22,
+      title: "Moldova este cel mai mare cumpărător de făină ucraineană",
+      excerpt: "Citește analiza completă pe site-ul original.",
+      date: "19 iulie 2025",
+      author: "Point.md",
+      category: "business",
+      image: "https://images.pexels.com/photos/3756050/pexels-photo-3756050.jpeg?_gl=1*6lsf9a*_ga*MjAzNDIxNTg4My4xNzQ3NDcwNDM3*_ga_8JE65Q40S6*czE3NTU2MTU3MzQkbzE1JGcxJHQxNzU1NjE1NzUyJGo0MiRsMCRoMA..",
+      readTime: "3 min",
+      url: "https://point.md/ru/novosti/ekonomika/moldova-iavliaetsia-krupneishim-pokupatelem-ukrainskoi-muki/"
+    },
+    {
       id: 6,
       title: "R. Moldova exportă mai multă făină, dar la un preț mult mai mic",
       excerpt: "Citește despre situația exporturilor de făină din Moldova pe site-ul original.",
@@ -262,6 +304,28 @@ const NewsPage = () => {
       image: "https://images.pexels.com/photos/1571075/pexels-photo-1571075.jpeg?_gl=1*iy4e5w*_ga*MjAzNDIxNTg43.1747470437*_ga_8JE65Q40S6*czE3NTIwNDEzODgkbzEyJGcxJHQxNzUyMDQzMDUyJGo1JGwwJGgw",
       readTime: "5 min",
       url: "https://stiri.md/article/social/tot-mai-multi-pasionati-de-panificatie-descopera-farmecul-painii-cu-maia/",
+      isExternal: true
+    },
+     {
+      id: 92,
+      title: "Astăzi, 8 august 2025, am avut onoarea de a primi în vizită oficială delegația din Uzbekistan.",
+      excerpt: "Astăzi, 8 august 2025, am avut onoarea de a primi în vizită oficială delegația din Uzbekistan. Programul vizitei a inclus o deplasare la TIRHLEB – fabrica de pâine din Tiraspol, unde oaspeții au putut vedea îndeaproape procesele moderne de producere a pâinii și diversitatea sortimentelor realizate aici. Ne-am exprimat bucuria și deschiderea de a le prezenta partenerilor noștri combinatele dotate cu tehnologii avansate, care oferă oportunități reale pentru dezvoltarea unor colaborări durabile și stabilirea de parteneriate strategice în viitor. Această întâlnire a reprezentat un pas important în consolidarea relațiilor economice și în identificarea unor proiecte comune, menite să aducă beneficii ambelor părți.",
+      date: "8 august 2025",
+      author: "ANIPM",
+      category: "parteneri",
+      image: uzb,
+      readTime: "1 min"
+    },
+    {
+      id: 14,
+      title: "Anunț privind organizarea consultărilor publice pe marginea proiectului hotărârii Guvernului cu privire la aprobarea Cerințelor de calitate pentru produsele de panificație și pastele făinoase și a notei de fundamentare.",
+      excerpt: "Afla mai multe pe site-ul original",
+      date: "14 iunie 2025-30 iunie 2025",
+      author: "Particip.gov.md",
+      category: "panificatie si paste",
+      image: "https://particip.gov.md/resources/images/cover.jpg",
+      readTime: "3 min",
+      url: "https://particip.gov.md/ro/document/stages/anunt-privind-organizarea-consultarilor-publice-pe-marginea-proiectului-hotararii-guvernului-cu-privire-la-aprobarea-cerintelor-de-calitate-pentru-produsele-de-panificatie-si-pastele-fainoase-si-a-notei-de-fundamentare/14839",
       isExternal: true
     },
     {
@@ -583,124 +647,296 @@ const NewsPage = () => {
                 variants={cardVariants}
                 className="group"
               >
-                <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:border-primary-200 h-full flex flex-col">
-                  <div className="relative h-56 overflow-hidden">
-                    {news.image ? (
-                      <>
-                        <img 
-                          src={news.image} 
-                          alt={news.title} 
-                          className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
-                        />
-                        <div className={`absolute top-4 right-4 text-white text-xs font-bold py-1 px-2 rounded-full shadow-lg border border-white/20 tracking-wide ${news.hasDocuments ? 'bg-gradient-to-r from-blue-600 to-indigo-600' : news.hasImages ? 'bg-gradient-to-r from-green-600 to-emerald-600' : news.isExternal ? 'bg-gradient-to-r from-orange-500 to-yellow-500' : 'bg-primary-500'}`}>
-                          <div className="flex items-center space-x-1">
-                            <span>{news.hasDocuments ? '📄' : news.hasImages ? '🖼️' : news.isExternal ? '🔗' : ''}</span>
-                            <span>{news.hasDocuments ? 'Documente' : news.hasImages ? 'Imagine' : news.isExternal ? 'Extern' : news.category.charAt(0).toUpperCase() + news.category.slice(1)}</span>
+                {news.hasImages ? (
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:border-primary-200 h-full flex flex-col">
+                    {/* Image Section with Beautiful Bakery Images */}
+                    <div className="relative h-56 overflow-hidden">
+                      {news.image ? (
+                        <>
+                          <img 
+                            src={news.image} 
+                            alt={news.title} 
+                            className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                          />
+                          {/* Category badge */}
+                          <div className="absolute top-4 right-4 bg-gradient-to-r from-green-400 to-green-500 text-white text-xs font-bold py-2 px-3 rounded-full shadow-lg border border-white/20 uppercase tracking-wide">
+                            <div className="flex items-center space-x-1">
+                              <span>💡</span>
+                              <span>IMAGINE</span>
+                            </div>
+                          </div>
+                        </>
+                      ) : (
+                        <div className="h-full bg-gradient-to-br from-gray-100 via-blue-50 to-blue-100 flex items-center justify-center">
+                          <div className="text-center">
+                            <FaImage className="text-blue-400 text-4xl mx-auto mb-2" />
+                            <div className="text-blue-600 text-sm font-medium">Imagine indisponibilă</div>
                           </div>
                         </div>
-                      </>
-                    ) : (
-                      <div className="h-full bg-gradient-to-br from-gray-100 via-blue-50 to-blue-100 flex items-center justify-center">
-                        <div className="text-center">
-                          <FaImage className="text-blue-400 text-4xl mx-auto mb-2" />
-                          <div className="text-blue-600 text-sm font-medium">Imagine indisponibilă</div>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                  
-                  <div className="p-6 flex flex-col flex-grow">
-                    <div className="flex flex-wrap gap-2 mb-4">
-                        <span className="px-3 py-1 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full text-xs font-semibold inline-flex items-center border border-orange-700">
+                      )}
+                    </div>
+                    
+                    {/* Content Section */}
+                    <div className="p-6 flex flex-col flex-grow">
+                      {/* Tags and Meta Info */}
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        <span className={`px-3 py-1 rounded-full text-xs font-semibold inline-flex items-center text-white ${
+                          index % 4 === 0 ? 'bg-gradient-to-r from-green-500 to-green-600' :
+                          index % 4 === 1 ? 'bg-gradient-to-r from-blue-500 to-blue-600' :
+                          index % 4 === 2 ? 'bg-gradient-to-r from-purple-500 to-purple-600' :
+                          'bg-gradient-to-r from-emerald-500 to-emerald-600'
+                        }`}>
                           <FaCalendarAlt className="mr-1" /> {news.date}
                         </span>
-                         <span className="px-3 py-1 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full text-xs font-semibold inline-flex items-center border border-orange-700">
+                        <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold inline-flex items-center">
                           <FaTag className="mr-1" /> {news.category.charAt(0).toUpperCase() + news.category.slice(1)}
                         </span>
-                      {news.readTime && (
-                        <span className="px-3 py-1 bg-gradient-to-r from-gray-100 to-gray-200 text-gray-700 rounded-full text-xs font-semibold inline-flex items-center border border-gray-200">
-                          <FaClock className="mr-1" /> {news.readTime}
-                        </span>
-                      )}
-                    </div>
-                    
-                    <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-primary-600 transition-colors duration-300 line-clamp-2 leading-tight">
-                      {news.isExternal ? (
-                        <a href={news.url} target="_blank" rel="noopener noreferrer" className="hover:text-primary-600">
-                          {news.title}
-                        </a>
-                      ) : (
-                        news.title
-                      )}
-                    </h3>
-                    
-                    <p className="text-gray-600 mb-4 flex-grow line-clamp-3 leading-relaxed text-sm">
-                      {news.excerpt}
-                    </p>
-                    
-                    {news.hasDocuments && news.documents && news.documents.length > 0 && (
-                      <div className="mb-4 p-3 bg-blue-50 rounded-lg">
-                        <h4 className="text-sm font-semibold text-blue-800 mb-2 flex items-center">
-                          <FaFileAlt className="mr-2" />
-                          Documente disponibile ({news.documents.length})
-                        </h4>
-                        <div className="space-y-2">
-                          {news.documents.map((doc, docIndex) => (
-                            <div key={docIndex} className="flex items-center text-xs text-blue-600">
-                              <span className="mr-2">📄</span>
-                              <a href={doc.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                                {doc.title}
-                              </a>
-                            </div>
-                          ))}
+                      </div>
+                      
+                      {/* Title */}
+                      <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-primary-600 transition-colors duration-300 line-clamp-2 leading-tight">
+                        {news.title}
+                      </h3>
+                      
+                      {/* Excerpt */}
+                      <p className="text-gray-600 mb-4 flex-grow line-clamp-6 leading-relaxed text-sm">
+                        {news.excerpt}
+                      </p>
+                      
+                      {/* Footer with Author and CTA */}
+                      <div className="flex items-center justify-between pt-4 border-t border-gray-100 mt-auto">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-500 to-blue-500 flex items-center justify-center text-white font-bold text-sm shadow-lg">
+                            {news.author.charAt(0)}
+                          </div>
+                          <div>
+                            <div className="text-sm font-semibold text-gray-800">{news.author}</div>
+                            <div className="text-xs text-gray-500">Sursă externă</div>
+                          </div>
+                        </div>
+                        
+                        <div className="flex justify-center gap-3 mt-4">
+                          {news.galleryUrl && (
+                            <Link 
+                              to={news.galleryUrl}
+                              className="px-4 py-2 bg-green-500 text-white rounded-full font-medium hover:bg-green-600 transition-all duration-300 text-sm flex items-center gap-2"
+                            >
+                              <span>📸</span>
+                              Vezi Galeria
+                            </Link>
+                          )}
+                          {news.url && news.url !== '#' && (
+                            <a 
+                              href={news.url} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="px-4 py-2 bg-blue-500 text-white rounded-full font-medium hover:bg-blue-600 transition-all duration-300 text-sm flex items-center gap-2"
+                            >
+                              <span>🔗</span>
+                              Vezi link
+                            </a>
+                          )}
                         </div>
                       </div>
-                    )}
-
-                    <div className="flex items-center mt-4">
-                      <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center mr-3 text-gray-600 font-bold text-lg">
-                        {news.author ? news.author.charAt(0).toUpperCase() : '?'}
-                      </div>
-                      <div className="flex-grow">
-                        <p className="text-sm font-semibold text-gray-800">{news.author}</p>
-                        <p className="text-xs text-gray-500">Sursă externă</p>
-                      </div>
-                      {news.hasImages && news.galleryUrl && (
-                      <Link 
-                          to={news.galleryUrl} 
-                          className="inline-flex items-center px-4 py-2 bg-green-500 text-white rounded-full text-sm font-medium hover:bg-green-600 transition-colors duration-300 mr-2"
-                        >
-                          Vezi galeria
-                          <FaImages className="ml-2 text-xs" />
-                        </Link>
-                      )}
-                      {news.hasExternalLink && news.externalLink && (
-                        <a 
-                          href={news.externalLink} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center px-4 py-2 bg-green-500 text-white rounded-full text-sm font-medium hover:bg-green-600 transition-colors duration-300 mr-2"
-                        >
-                          Vezi link
-                          <FaLink className="ml-2 text-xs" />
-                        </a>
-                      )}
-                      {!news.hasImages && !news.hasExternalLink && (
-                        <Link 
-                          to={news.url} 
-                          className="inline-flex items-center px-4 py-2 bg-green-500 text-white rounded-full text-sm font-medium hover:bg-green-600 transition-colors duration-300"
-                        >
-                          Citește
-                          <FaChevronRight className="ml-2 text-xs" />
-                        </Link>
-                      )}
                     </div>
                   </div>
-                </div>
+                ) : news.hasDocuments ? (
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:border-primary-200 h-full flex flex-col">
+                    {/* Image Section for News with Documents */}
+                    <div className="relative h-56 overflow-hidden">
+                      {news.image ? (
+                        <>
+                          <img 
+                            src={news.image} 
+                            alt={news.title} 
+                            className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                          />
+                          {/* Blue badge for documents */}
+                          <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs font-bold py-2 px-3 rounded-full shadow-lg border border-white/20">
+                            <div className="flex items-center space-x-1">
+                              <span>📄</span>
+                              <span>DOCUMENTE</span>
+                            </div>
+                          </div>
+                        </>
+                      ) : (
+                        <div className="h-full bg-gradient-to-br from-blue-100 via-indigo-100 to-blue-200 flex items-center justify-center">
+                          <div className="text-center">
+                            <FaImage className="text-blue-500 text-4xl mx-auto mb-2" />
+                            <div className="text-blue-700 text-sm font-medium">Documente oficiale</div>
+                            <div className="text-blue-600 text-xs mt-1">Pentru previzualizare</div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                    
+                    {/* Content Section */}
+                    <div className="p-6 flex flex-col flex-grow">
+                      {/* Tags and Meta Info */}
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        <span className={`px-3 py-1 rounded-full text-xs font-semibold inline-flex items-center text-white ${
+                          index % 4 === 0 ? 'bg-gradient-to-r from-green-500 to-green-600' :
+                          index % 4 === 1 ? 'bg-gradient-to-r from-blue-500 to-blue-600' :
+                          index % 4 === 2 ? 'bg-gradient-to-r from-purple-500 to-purple-600' :
+                          'bg-gradient-to-r from-emerald-500 to-emerald-600'
+                        }`}>
+                          <FaCalendarAlt className="mr-1" /> {news.date}
+                        </span>
+                        <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold inline-flex items-center">
+                          <FaTag className="mr-1" /> {news.category.charAt(0).toUpperCase() + news.category.slice(1)}
+                        </span>
+                        <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold inline-flex items-center">
+                          🏛️ Ministerial
+                        </span>
+                      </div>
+                      
+                      {/* Title */}
+                      <h3 className="text-xl font-bold mb-3 text-gray-900 line-clamp-2 leading-tight">
+                        {news.title}
+                      </h3>
+                      
+                      {/* Excerpt */}
+                      <p className="text-gray-600 mb-4 flex-grow line-clamp-6 leading-relaxed text-sm">
+                        {news.excerpt}
+                      </p>
+                      
+                      {/* Documents Section */}
+                      {news.hasDocuments && news.documents && (
+                        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-4 mb-4 border border-blue-100">
+                          <h4 className="text-sm font-semibold text-gray-800 mb-3 flex items-center">
+                            <span className="mr-2">📑</span>
+                            Documente disponibile ({news.documents.length})
+                          </h4>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                            {news.documents.map((doc, docIndex) => (
+                              <button
+                                key={doc.id}
+                                onClick={() => handlePreview(doc.filename, doc.title)}
+                                className="text-left text-xs bg-white hover:bg-blue-50 border border-blue-200 hover:border-blue-300 rounded-lg p-2 transition-all duration-200 flex items-center"
+                              >
+                                <span className="mr-2">
+                                  {doc.filename.endsWith('.pdf') ? '📄' : '📝'}
+                                </span>
+                                <span className="font-medium text-blue-700 truncate">
+                                  {doc.title}
+                                </span>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                      
+                      {/* Footer with Author and Documents Info */}
+                      <div className="flex items-center justify-between pt-4 border-t border-gray-100 mt-auto">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center text-white font-bold text-sm shadow-lg">
+                            {news.author.charAt(0)}
+                          </div>
+                          <div>
+                            <div className="text-sm font-semibold text-gray-800">{news.author}</div>
+                            <div className="text-xs text-gray-500">Sursă oficială</div>
+                          </div>
+                        </div>
+                        
+                        <div className="flex items-center text-blue-600 font-semibold text-sm">
+                          <span className="mr-2">📋 Vezi documente</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <a 
+                    href={news.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block h-full"
+                  >
+                    <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:border-primary-200 h-full flex flex-col">
+                      {/* Image Section with Beautiful Bakery Images */}
+                      <div className="relative h-56 overflow-hidden">
+                        {news.image ? (
+                          <>
+                            <img 
+                              src={news.image} 
+                              alt={news.title} 
+                              className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                            />
+                          </>
+                        ) : (
+                          <div className="h-full bg-gradient-to-br from-gray-100 via-blue-50 to-blue-100 flex items-center justify-center">
+                            <div className="text-center">
+                              <FaImage className="text-blue-400 text-4xl mx-auto mb-2" />
+                              <div className="text-blue-600 text-sm font-medium">Imagine indisponibilă</div>
+                            </div>
+                          </div>
+                        )}
+                        
+                        {/* Category badge */}
+                        <div className="absolute top-4 right-4 bg-gradient-to-r from-primary-500 to-blue-500 text-white text-xs font-bold py-2 px-3 rounded-full shadow-lg border border-white/20 uppercase tracking-wide">
+                          🌐 Extern
+                        </div>
+                      </div>
+                      
+                      {/* Content Section */}
+                      <div className="p-6 flex flex-col flex-grow">
+                        {/* Tags and Meta Info */}
+                        <div className="flex flex-wrap gap-2 mb-4">
+                          <span className={`px-3 py-1 rounded-full text-xs font-semibold inline-flex items-center text-white ${
+                            index % 4 === 0 ? 'bg-gradient-to-r from-green-500 to-green-600' :
+                            index % 4 === 1 ? 'bg-gradient-to-r from-blue-500 to-blue-600' :
+                            index % 4 === 2 ? 'bg-gradient-to-r from-purple-500 to-purple-600' :
+                            'bg-gradient-to-r from-emerald-500 to-emerald-600'
+                          }`}>
+                            <FaCalendarAlt className="mr-1" /> {news.date}
+                          </span>
+                          <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold inline-flex items-center">
+                            <FaTag className="mr-1" /> {news.category.charAt(0).toUpperCase() + news.category.slice(1)}
+                          </span>
+                          <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-semibold inline-flex items-center">
+                            <FaClock className="mr-1" /> {news.readTime}
+                          </span>
+                        </div>
+                        
+                        {/* Title */}
+                        <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-primary-600 transition-colors duration-300 line-clamp-2 leading-tight">
+                          {news.title}
+                        </h3>
+                        
+                        {/* Excerpt */}
+                        <p className="text-gray-600 mb-6 flex-grow line-clamp-6 leading-relaxed text-sm">
+                          {news.excerpt}
+                        </p>
+                        
+                        {/* Footer with Author and CTA */}
+                        <div className="flex items-center justify-between pt-4 border-t border-gray-100 mt-auto">
+                          <div className="flex items-center space-x-3">
+                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-500 to-blue-500 flex items-center justify-center text-white font-bold text-sm shadow-lg">
+                              {news.author.charAt(0)}
+                            </div>
+                            <div>
+                              <div className="text-sm font-semibold text-gray-800">{news.author}</div>
+                              <div className="text-xs text-gray-500">Sursă externă</div>
+                            </div>
+                          </div>
+                          
+                          <div className="flex items-center text-primary-600 font-semibold group-hover:text-primary-700 transition-colors duration-300">
+                            <span className="text-sm mr-2">Citește</span>
+                            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary-100 to-blue-100 group-hover:from-primary-200 group-hover:to-blue-200 flex items-center justify-center transition-all duration-300 shadow-md">
+                              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                )}
               </motion.div>
             ))}
           </div>
           
+          {/* Enhanced "View all" button */}
           <motion.div 
             className="text-center mt-16"
             initial={{ opacity: 0, y: 20 }}

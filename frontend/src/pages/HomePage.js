@@ -149,7 +149,7 @@ const HomePage = () => {
       url: "https://stiri.md/article/economic/ion-perju-preturile-s-au-majorat-nejustificat-grau-in-tara-este/"
     },
     {
-      id: 4,
+      id: 11,
       title: "Cel mai mare producător din industria de panificație din Moldova înregistrează un profit record",
       excerpt: "Citește analiza completă pe site-ul original.",
       date: "21 februarie 2025",
@@ -158,6 +158,17 @@ const HomePage = () => {
       image: "https://images.pexels.com/photos/461060/pexels-photo-461060.jpeg",
       readTime: "6 min",
       url: "https://agora.md/2025/02/21/cel-mai-mare-producator-din-industria-de-panificatie-din-moldova-inregistreaza-un-profit-record"
+    },
+    {
+      id: 4,
+      title: "Moldova este cel mai mare cumpărător de făină ucraineană",
+      excerpt: "Citește analiza completă pe site-ul original.",
+      date: "19 iulie 2025",
+      author: "Point.md",
+      category: "business",
+      image: "https://images.pexels.com/photos/3756050/pexels-photo-3756050.jpeg?_gl=1*6lsf9a*_ga*MjAzNDIxNTg4My4xNzQ3NDcwNDM3*_ga_8JE65Q40S6*czE3NTU2MTU3MzQkbzE1JGcxJHQxNzU1NjE1NzUyJGo0MiRsMCRoMA..",
+      readTime: "6 min",
+      url: "https://point.md/ru/novosti/ekonomika/moldova-iavliaetsia-krupneishim-pokupatelem-ukrainskoi-muki/"
     },
     {
       id: 5,
@@ -323,7 +334,7 @@ const HomePage = () => {
                             className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
                           />
                           {/* Category badge */}
-                          <div className="absolute top-4 right-4 bg-gradient-to-r from-orange-400 to-yellow-500 text-white text-xs font-bold py-2 px-3 rounded-full shadow-lg border border-white/20 uppercase tracking-wide">
+                          <div className="absolute top-4 right-4 bg-gradient-to-r from-green-400 to-green-500 text-white text-xs font-bold py-2 px-3 rounded-full shadow-lg border border-white/20 uppercase tracking-wide">
                             <div className="flex items-center space-x-1">
                               <span>💡</span>
                               <span>IMAGINE</span>
@@ -344,7 +355,12 @@ const HomePage = () => {
                     <div className="p-6 flex flex-col flex-grow">
                       {/* Tags and Meta Info */}
                       <div className="flex flex-wrap gap-2 mb-4">
-                        <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-semibold inline-flex items-center">
+                        <span className={`px-3 py-1 rounded-full text-xs font-semibold inline-flex items-center text-white ${
+                          index % 4 === 0 ? 'bg-gradient-to-r from-green-500 to-green-600' :
+                          index % 4 === 1 ? 'bg-gradient-to-r from-blue-500 to-blue-600' :
+                          index % 4 === 2 ? 'bg-gradient-to-r from-purple-500 to-purple-600' :
+                          'bg-gradient-to-r from-emerald-500 to-emerald-600'
+                        }`}>
                           <FaCalendarAlt className="mr-1" /> {news.date}
                         </span>
                         <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold inline-flex items-center">
@@ -358,7 +374,7 @@ const HomePage = () => {
                       </h3>
                       
                       {/* Excerpt */}
-                      <p className="text-gray-600 mb-4 flex-grow line-clamp-3 leading-relaxed text-sm">
+                      <p className="text-gray-600 mb-4 flex-grow line-clamp-6 leading-relaxed text-sm">
                         {news.excerpt}
                       </p>
                       
@@ -433,7 +449,12 @@ const HomePage = () => {
                     <div className="p-6 flex flex-col flex-grow">
                       {/* Tags and Meta Info */}
                       <div className="flex flex-wrap gap-2 mb-4">
-                        <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-semibold inline-flex items-center">
+                        <span className={`px-3 py-1 rounded-full text-xs font-semibold inline-flex items-center text-white ${
+                          index % 4 === 0 ? 'bg-gradient-to-r from-green-500 to-green-600' :
+                          index % 4 === 1 ? 'bg-gradient-to-r from-blue-500 to-blue-600' :
+                          index % 4 === 2 ? 'bg-gradient-to-r from-purple-500 to-purple-600' :
+                          'bg-gradient-to-r from-emerald-500 to-emerald-600'
+                        }`}>
                           <FaCalendarAlt className="mr-1" /> {news.date}
                         </span>
                         <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold inline-flex items-center">
@@ -450,7 +471,7 @@ const HomePage = () => {
                       </h3>
                       
                       {/* Excerpt */}
-                      <p className="text-gray-600 mb-4 flex-grow line-clamp-3 leading-relaxed text-sm">
+                      <p className="text-gray-600 mb-4 flex-grow line-clamp-6 leading-relaxed text-sm">
                         {news.excerpt}
                       </p>
                       
@@ -535,7 +556,12 @@ const HomePage = () => {
                       <div className="p-6 flex flex-col flex-grow">
                         {/* Tags and Meta Info */}
                         <div className="flex flex-wrap gap-2 mb-4">
-                          <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-semibold inline-flex items-center">
+                          <span className={`px-3 py-1 rounded-full text-xs font-semibold inline-flex items-center text-white ${
+                            index % 4 === 0 ? 'bg-gradient-to-r from-green-500 to-green-600' :
+                            index % 4 === 1 ? 'bg-gradient-to-r from-blue-500 to-blue-600' :
+                            index % 4 === 2 ? 'bg-gradient-to-r from-purple-500 to-purple-600' :
+                            'bg-gradient-to-r from-emerald-500 to-emerald-600'
+                          }`}>
                             <FaCalendarAlt className="mr-1" /> {news.date}
                           </span>
                           <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold inline-flex items-center">
@@ -552,7 +578,7 @@ const HomePage = () => {
                         </h3>
                         
                         {/* Excerpt */}
-                        <p className="text-gray-600 mb-6 flex-grow line-clamp-3 leading-relaxed text-sm">
+                        <p className="text-gray-600 mb-6 flex-grow line-clamp-6 leading-relaxed text-sm">
                           {news.excerpt}
                         </p>
                         
