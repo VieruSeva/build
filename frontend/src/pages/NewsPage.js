@@ -29,10 +29,12 @@ import trans7 from "../images/trans7.jpg";
 import riga from "../images/riga.jpg";
 import anuga from "../images/anuga.jpg";
 import uzb from "../images/uzb.jpg";
+import pavel from "../images/pavel.jpg";
 const NewsPage = () => {
   const [activeCategory, setActiveCategory] = useState("toate");
   const [expandedItemId, setExpandedItemId] = useState(null);
   const [expandedEventId, setExpandedEventId] = useState(null);
+  const [expandedNewsId, setExpandedNewsId] = useState(null);
   const [previewModal, setPreviewModal] = useState({
     isOpen: false,
     url: "",
@@ -64,6 +66,10 @@ const NewsPage = () => {
 
   const toggleEventReadMore = (id) => {
     setExpandedEventId(expandedEventId === id ? null : id);
+  };
+
+  const toggleNewsReadMore = (id) => {
+    setExpandedNewsId(expandedNewsId === id ? null : id);
   };
 
   const handlePreview = (filename, title) => {
@@ -314,7 +320,19 @@ const NewsPage = () => {
       author: "ANIPM",
       category: "parteneri",
       image: uzb,
-      readTime: "1 min"
+      readTime: "1 min",
+      isExpandable: true
+    },
+    {
+      id: 93,
+      title: "Pavel Țelicka, la Chișinău: Sprijin deplin din partea Cehiei pentru integrarea europeană a Moldovei.",
+      excerpt: "Pe 13 august 2025, la Casa Guvernului, a avut loc o ședință de lucru cu Pavel Țelicka, deputat în Parlamentul European și fost negociator-șef al Republicii Cehe pentru aderarea la Uniunea Europeană. Întâlnirea, găzduită de Ludmila Catlabuga, ministrul Agriculturii și Industriei Alimentare, a reunit reprezentanți ai asociațiilor de producători locali. Discuțiile au vizat atât experiența Cehiei în procesul de integrare europeană, cât și direcțiile de dezvoltare a sectorului agricol din Republica Moldova. Oficialul european a vorbit despre modernizarea infrastructurii agricole, creșterea competitivității produselor moldovenești pe piața UE și accesarea fondurilor europene, asigurând că experții cehi sunt gata să ofere sprijin tehnic și consultanță pentru a accelera parcursul european al țării.",
+      date: "13 august 2025",
+      author: "ANIPM",
+      category: "parteneri",
+      image: pavel,
+      readTime: "3 min",
+      isExpandable: true
     },
     {
       id: 14,
@@ -432,6 +450,14 @@ const NewsPage = () => {
       return item.fullContent || item.excerpt;
     }
     return item.summary || item.excerpt;
+  };
+
+  const getNewsDisplayContent = (news) => {
+    const maxLength = 200;
+    if (expandedNewsId === news.id || !news.isExpandable) {
+      return news.excerpt;
+    }
+    return news.excerpt.length > maxLength ? news.excerpt.substring(0, maxLength) + '...' : news.excerpt;
   };
 
   const cardVariants = {
@@ -841,6 +867,87 @@ const NewsPage = () => {
                         <div className="flex items-center text-blue-600 font-semibold text-sm">
                           <span className="mr-2">📋 Vezi documente</span>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : !news.url || news.url === '#' ? (
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:border-primary-200 h-full flex flex-col">
+                    {/* Image Section */}
+                    <div className="relative h-56 overflow-hidden">
+                      {news.image ? (
+                        <>
+                          <img 
+                            src={news.image} 
+                            alt={news.title} 
+                            className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                          />
+                        </>
+                      ) : (
+                        <div className="h-full bg-gradient-to-br from-gray-100 via-blue-50 to-blue-100 flex items-center justify-center">
+                          <div className="text-center">
+                            <FaImage className="text-blue-400 text-4xl mx-auto mb-2" />
+                            <div className="text-blue-600 text-sm font-medium">Imagine indisponibilă</div>
+                          </div>
+                        </div>
+                      )}
+                      
+                      {/* Category badge */}
+                      <div className="absolute top-4 right-4 bg-gradient-to-r from-green-500 to-green-600 text-white text-xs font-bold py-2 px-3 rounded-full shadow-lg border border-white/20 uppercase tracking-wide">
+                        Local
+                      </div>
+                    </div>
+                    
+                    {/* Content Section */}
+                    <div className="p-6 flex flex-col flex-grow">
+                      {/* Tags and Meta Info */}
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        <span className={`px-3 py-1 rounded-full text-xs font-semibold inline-flex items-center text-white ${
+                          index % 4 === 0 ? 'bg-gradient-to-r from-green-500 to-green-600' :
+                          index % 4 === 1 ? 'bg-gradient-to-r from-blue-500 to-blue-600' :
+                          index % 4 === 2 ? 'bg-gradient-to-r from-purple-500 to-purple-600' :
+                          'bg-gradient-to-r from-emerald-500 to-emerald-600'
+                        }`}>
+                          <FaCalendarAlt className="mr-1" /> {news.date}
+                        </span>
+                        <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold inline-flex items-center">
+                          <FaTag className="mr-1" /> {news.category.charAt(0).toUpperCase() + news.category.slice(1)}
+                        </span>
+                        <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-semibold inline-flex items-center">
+                          <FaClock className="mr-1" /> {news.readTime}
+                        </span>
+                      </div>
+                      
+                      {/* Title */}
+                      <h3 className="text-xl font-bold mb-3 text-gray-900 line-clamp-2 leading-tight">
+                        {news.title}
+                      </h3>
+                      
+                      {/* Excerpt */}
+                      <p className="text-gray-600 mb-6 flex-grow leading-relaxed text-sm">
+                        {getNewsDisplayContent(news)}
+                      </p>
+                      
+                      {/* Footer with Author and CTA */}
+                      <div className="flex items-center justify-between pt-4 border-t border-gray-100 mt-auto">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-500 to-blue-500 flex items-center justify-center text-white font-bold text-sm shadow-lg">
+                            {news.author.charAt(0)}
+                          </div>
+                          <div>
+                            <div className="text-sm font-semibold text-gray-800">{news.author}</div>
+                            <div className="text-xs text-gray-500">Sursă locală</div>
+                          </div>
+                        </div>
+                        
+                        {news.isExpandable && (
+                          <button
+                            onClick={() => toggleNewsReadMore(news.id)}
+                            className="inline-flex items-center px-4 py-2 bg-primary-500 text-white rounded-full text-sm font-medium hover:bg-primary-600 transition-colors duration-300"
+                          >
+                            {expandedNewsId === news.id ? 'Citește mai puțin' : 'Citește mai mult'}
+                            <FaChevronRight className="ml-2 text-xs" />
+                          </button>
+                        )}
                       </div>
                     </div>
                   </div>

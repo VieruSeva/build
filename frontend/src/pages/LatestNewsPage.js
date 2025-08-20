@@ -21,7 +21,8 @@ import latestNewsImage from '../images/latest-news.jpg';
 import forumImage from '../images/forum.jpg';
 import trans1Image from '../images/trans1.jpg';
 import facility1Image from '../images/facility1.jpg';
-
+import uzb from "../images/uzb.jpg";
+import pavel from "../images/pavel.jpg";
 const LatestNewsPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
@@ -70,6 +71,18 @@ const LatestNewsPage = () => {
       url: "https://particip.gov.md/ro/document/stages/anunt-privind-organizarea-consultarilor-publice-pe-marginea-proiectului-hotararii-guvernului-cu-privire-la-aprobarea-cerintelor-de-calitate-pentru-produsele-de-panificatie-si-pastele-fainoase-si-a-notei-de-fundamentare/14839",
       isExternal: true
     },
+ {
+      id: 92,
+      title: "Astăzi, 8 august 2025, am avut onoarea de a primi în vizită oficială delegația din Uzbekistan.",
+      excerpt: "Astăzi, 8 august 2025, am avut onoarea de a primi în vizită oficială delegația din Uzbekistan. Programul vizitei a inclus o deplasare la TIRHLEB – fabrica de pâine din Tiraspol, unde oaspeții au putut vedea îndeaproape procesele moderne de producere a pâinii și diversitatea sortimentelor realizate aici. Ne-am exprimat bucuria și deschiderea de a le prezenta partenerilor noștri combinatele dotate cu tehnologii avansate, care oferă oportunități reale pentru dezvoltarea unor colaborări durabile și stabilirea de parteneriate strategice în viitor. Această întâlnire a reprezentat un pas important în consolidarea relațiilor economice și în identificarea unor proiecte comune, menite să aducă beneficii ambelor părți.",
+      date: "8 august 2025",
+      author: "ANIPM",
+      category: "parteneri",
+      image: uzb,
+      readTime: "1 min",
+      isExpandable: true
+    },
+
     {
       id: 33,
       title: "Moldova este cel mai mare cumpărător de făină ucraineană",
@@ -91,6 +104,17 @@ const LatestNewsPage = () => {
       readTime: "6 min",
       url: "https://mded.gov.md/domenii/ajutor-de-stat/ajutor-de-stat-regional-pentru-investitii/",
       image: "https://images.pexels.com/photos/5846174/pexels-photo-5846174.jpeg?_gl=1*1c1dn0v*_ga*MjAzNDIxNTg4My4xNzQ3NDcwNDM3*_ga_8JE65Q40S6*czE3NTIwNDEzODgkbzEyJGcxJHQxNzUyMDQyOTQwJGo1MiRsMCRoMA" // Beautiful artisan bread - EXACT MATCH
+    },
+    {
+      id: 93,
+      title: "Pavel Țelicka, la Chișinău: Sprijin deplin din partea Cehiei pentru integrarea europeană a Moldovei.",
+      excerpt: "Pe 13 august 2025, la Casa Guvernului, a avut loc o ședință de lucru cu Pavel Țelicka, deputat în Parlamentul European și fost negociator-șef al Republicii Cehe pentru aderarea la Uniunea Europeană. Întâlnirea, găzduită de Ludmila Catlabuga, ministrul Agriculturii și Industriei Alimentare, a reunit reprezentanți ai asociațiilor de producători locali. Discuțiile au vizat atât experiența Cehiei în procesul de integrare europeană, cât și direcțiile de dezvoltare a sectorului agricol din Republica Moldova. Oficialul european a vorbit despre modernizarea infrastructurii agricole, creșterea competitivității produselor moldovenești pe piața UE și accesarea fondurilor europene, asigurând că experții cehi sunt gata să ofere sprijin tehnic și consultanță pentru a accelera parcursul european al țării.",
+      date: "13 august 2025",
+      author: "ANIPM",
+      category: "parteneri",
+      image: pavel,
+      readTime: "3 min",
+      isExpandable: true
     },
     {
       id: 6,
