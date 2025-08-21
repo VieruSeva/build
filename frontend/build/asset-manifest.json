@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f71227c.css",
-    "main.js": "/static/js/main.44d3f97f.js",
+    "main.css": "/static/css/main.3c2e0d18.css",
+    "main.js": "/static/js/main.364a7e62.js",
     "static/js/453.d855a71b.chunk.js": "/static/js/453.d855a71b.chunk.js",
     "static/media/Interview.mp4": "/static/media/Interview.c3e2636406752436e283.mp4",
     "static/media/Shorts.mp4": "/static/media/Shorts.87975882a7cc04016f20.mp4",
@@ -44,6 +44,7 @@
     "static/media/fotbal1.jpg": "/static/media/fotbal1.1643aa23d01bdab0dbc0.jpg",
     "static/media/forum-brutari-2.jpg": "/static/media/forum-brutari-2.94f2fb43b77447b0843d.jpg",
     "static/media/facility4.jpg": "/static/media/facility4.8039d1417f61d836f10a.jpg",
+    "static/media/uzb.jpg": "/static/media/uzb.f936109d9c1e4ac3614a.jpg",
     "static/media/iba2.jpg": "/static/media/iba2.13c49b293f2a5d2971ff.jpg",
     "static/media/trans1.jpg": "/static/media/trans1.5ab9ab4b1f9542bda468.jpg",
     "static/media/dussel.jpg": "/static/media/dussel.2fb9f2cabdd830d2e918.jpg",
@@ -52,6 +53,7 @@
     "static/media/facility2.jpg": "/static/media/facility2.e48a899056a5eb24a973.jpg",
     "static/media/fotbal2.jpg": "/static/media/fotbal2.67a7a43bec093399d8a8.jpg",
     "static/media/trans7.jpg": "/static/media/trans7.5864115f8565e520a09d.jpg",
+    "static/media/pavel.jpg": "/static/media/pavel.f48111147ca88ecf81bf.jpg",
     "static/media/eba.jpg": "/static/media/eba.454385084f9cfe7d4d61.jpg",
     "static/media/forum-brutari-4.jpg": "/static/media/forum-brutari-4.5fc4bf248d6bc6ebdc7f.jpg",
     "static/media/trans2.jpg": "/static/media/trans2.0b6cf022b45c55b75985.jpg",
@@ -86,6 +88,7 @@
     "static/media/iba-germania-thumbnail.jpg": "/static/media/iba-germania-thumbnail.44519300a83136e75f81.jpg",
     "static/media/BUDNEA RODICA I.I..png": "/static/media/BUDNEA RODICA I.I..36d1356b3a3ae1584408.png",
     "static/media/IUGINTERTRANS S.A..png": "/static/media/IUGINTERTRANS S.A..e0db84fd45b08f8785ee.png",
+    "static/media/anuga.jpg": "/static/media/anuga.5b01698bfc70b2d5000f.jpg",
     "static/media/Oleineac SRL.png": "/static/media/Oleineac SRL.e0933a9a0baf1b8cdbd6.png",
     "static/media/pakmaya.png": "/static/media/pakmaya.69d0b6739eaa19f953b8.png",
     "static/media/CRIST - VALG SRL.png": "/static/media/CRIST - VALG SRL.c24934beffed29960219.png",
@@ -93,6 +96,7 @@
     "static/media/grotex.png": "/static/media/grotex.b4448fccc14ddadf86b7.png",
     "static/media/Finantari_si_granturi.png": "/static/media/Finantari_si_granturi.1aa88f2b9b679e9794b0.png",
     "static/media/GLINCOR-COM-SRL.png": "/static/media/GLINCOR-COM-SRL.41fe5207320fb3748dd4.png",
+    "static/media/riga.jpg": "/static/media/riga.e7d0263386be8c9c83c9.jpg",
     "static/media/foodtech.png": "/static/media/foodtech.3508c460acf31dd0a5f4.png",
     "static/media/Rodals SRL.png": "/static/media/Rodals SRL.c13330da3a094bcfba90.png",
     "static/media/Expozitie-targ internationala specializata de produse, utilaje, tehnologii agricole si mestesuguri, editia a XXVII-a.png": "/static/media/Expozitie-targ internationala specializata de produse, utilaje, tehnologii agricole si mestesuguri, editia a XXVII-a.43aa1bfe541fbbe10a1b.png",
@@ -100,12 +104,12 @@
     "static/media/ANTREPRENOR EXPO.png": "/static/media/ANTREPRENOR EXPO.ec0c58bee91f40452927.png",
     "static/media/Organizatia_pentru_Dezvoltarea_Antreprenoriatului.png": "/static/media/Organizatia_pentru_Dezvoltarea_Antreprenoriatului.a306b6a336bcabcfe8f4.png",
     "index.html": "/index.html",
-    "main.4f71227c.css.map": "/static/css/main.4f71227c.css.map",
-    "main.44d3f97f.js.map": "/static/js/main.44d3f97f.js.map",
+    "main.3c2e0d18.css.map": "/static/css/main.3c2e0d18.css.map",
+    "main.364a7e62.js.map": "/static/js/main.364a7e62.js.map",
     "453.d855a71b.chunk.js.map": "/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f71227c.css",
-    "static/js/main.44d3f97f.js"
+    "static/css/main.3c2e0d18.css",
+    "static/js/main.364a7e62.js"
   ]
 }

@@ -77,7 +77,7 @@ export const Header = () => {
       title: t('navigation.news'), 
       path: "/noutati",
       submenu: [
-        { name: t('navigation.events'), path: "/evenimente" },
+        { name: t('navigation.events'), path: "/noutati" },
         { name: t('navigation.latestNews'), path: "/ultimele-stiri" },
         { name: t('navigation.testingLabs'), path: "/laboratoare" },
         { name: t('navigation.legislation'), path: "/legislatie" },
