@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { PageHero } from '../components/PageHero';
 import { FaArrowLeft } from 'react-icons/fa';
+import { openDocumentPreview, downloadDocument, getDocumentUrl } from '../utils/documentPreview';
 
 // Import local images
 import bakeryImage from '../images/bakery.jpg';
@@ -28,6 +29,9 @@ import pavel from "../images/pavel.jpg";
 const getIconForNewsItem = (item) => {
   if (item.hasImages || item.galleryUrl) {
     return <span className="text-primary-500 mr-3 text-2xl">📷</span>; // Gallery icon
+  }
+  if (item.hasDocuments && item.documents) {
+    return <span className="text-primary-500 mr-3 text-2xl">📄</span>; // Documents icon
   }
   if (item.isExternal || item.url) {
     return <span className="text-primary-500 mr-3 text-2xl">🔗</span>; // External link icon
@@ -106,25 +110,25 @@ const LatestNewsPage = () => {
           id: 1,
           title: "Răspuns oficial - Partea 1",
           filename: "minist1.pdf",
-          url: `${window.location.origin}/documents/minist1.pdf`
+          url: "/documents/minist1.pdf"
         },
         {
           id: 2,
           title: "Răspuns oficial - Partea 2", 
           filename: "minist2.pdf",
-          url: `${window.location.origin}/documents/minist2.pdf`
+          url: "/documents/minist2.pdf"
         },
         {
           id: 3,
           title: "Anexă - Document de poziție",
           filename: "minist3.docx",
-          url: `${window.location.origin}/documents/minist3.docx`
+          url: "/documents/minist3.docx"
         },
         {
           id: 4,
           title: "Răspuns oficial - Partea 3",
           filename: "minist4.pdf", 
-          url: `${window.location.origin}/documents/minist4.pdf`
+          url: "/documents/minist4.pdf"
         }
       ]
     },
@@ -227,6 +231,7 @@ const LatestNewsPage = () => {
       author: "Stiri.md",
       category: "piata",
       readTime: "4 min",
+      image: "https://i.simpalsmedia.com/point.md/news/809x456/23dc83357924e8dfe4f72f15d2378c39.jpg",
       url: "https://i.simpalsmedia.com/point.md/news/809x456/23dc83357924e8dfe4f72f15d2378c39.jpg"
     },
     {
@@ -275,6 +280,18 @@ const LatestNewsPage = () => {
       // Open external link
       window.open(item.url, '_blank', 'noopener,noreferrer');
     }
+  };
+
+  // Handle document preview
+  const handlePreview = (filename, title) => {
+    const url = getDocumentUrl(filename);
+    openDocumentPreview(url, title);
+  };
+
+  // Handle document download
+  const handleDownload = (filename, title) => {
+    const url = getDocumentUrl(filename);
+    downloadDocument(url, filename);
   };
 
   // Toggle expand/collapse for expandable items
@@ -378,11 +395,13 @@ const LatestNewsPage = () => {
                           <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center p-4">
                             <div className="text-3xl mb-2">
                               {item.hasImages ? '📷' : 
+                               item.hasDocuments ? '📄' :
                                item.isExternal || item.url ? '🔗' : 
                                item.isExpandable ? '📄' : '📰'}
                             </div>
                             <p className="text-sm font-semibold">
                               {item.hasImages ? 'Vezi Galeria' :
+                               item.hasDocuments ? 'Vezi Documente' :
                                item.isExternal || item.url ? 'Citește Articolul' :
                                item.isExpandable ? (expandedItems[item.id] ? 'Arată Mai Puțin' : 'Citește Mai Mult') : 'Vezi Știrea'}
                             </p>
@@ -423,7 +442,28 @@ const LatestNewsPage = () => {
                   </div>
                   
                   <div className="p-6 pt-0 mt-auto">
-                    {item.isExpandable ? (
+                    {item.hasImages && item.galleryUrl ? (
+                      <Link
+                        to={item.galleryUrl}
+                        className="btn-primary w-full inline-flex items-center justify-center text-sm"
+                      >
+                        <span className="mr-2">📷</span>
+                        Vezi Galeria
+                      </Link>
+                    ) : item.hasDocuments && item.documents ? (
+                      <div className="space-y-2">
+                        {item.documents.map((doc, index) => (
+                          <button
+                            key={doc.id}
+                            onClick={() => handlePreview(doc.filename, doc.title)}
+                            className="btn-primary w-full inline-flex items-center justify-center text-sm"
+                          >
+                            <span className="mr-2">📄</span>
+                            Vezi Documente {item.documents.length > 1 ? `(${index + 1})` : ''}
+                          </button>
+                        ))}
+                      </div>
+                    ) : item.isExpandable ? (
                       <button
                         onClick={() => toggleExpanded(item.id)}
                         className="btn-primary w-full inline-flex items-center justify-center text-sm"
@@ -433,14 +473,6 @@ const LatestNewsPage = () => {
                         </span>
                         {expandedItems[item.id] ? 'Arată Mai Puțin' : 'Citește Mai Mult'}
                       </button>
-                    ) : item.hasImages && item.galleryUrl ? (
-                      <Link
-                        to={item.galleryUrl}
-                        className="btn-primary w-full inline-flex items-center justify-center text-sm"
-                      >
-                        <span className="mr-2">📷</span>
-                        Vezi Galeria
-                      </Link>
                     ) : item.url ? (
                       <a
                         href={item.url}
